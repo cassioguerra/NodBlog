@@ -1,0 +1,26 @@
+<%-include('../../Partials/header.ejs') %>
+<%-include('../../Partials/navbar.ejs') %>
+<div class ="container">
+    <hr>
+    <h2> Usiarios </h2>
+    <a href="/admin/users/create" class="btn btn-success">Criar nova Categoaria</a>
+  
+    <table class="table table-striped table-bordered">
+        <thead>
+        <tr>
+          <th> ID </th>
+          <th> Email </th>
+       </tr>
+       </thead>
+       <tbody>
+       <%users.forEach(user => {%>
+            <tr>
+                <th><%= user.id %></th>
+                <th><%= user.email %> </th>
+              <th> ação</th>
+           <% }); %>
+        </tbody> 
+    </table>
+</div>
+<%-include('../../Partials/footer.ejs') %>
+

@@ -1,0 +1,52 @@
+<%-include('../../Partials/header.ejs') %>
+<!-- <div class="container">
+    <br>
+    <div class="card mt-5 md-10">
+      <div class="card-header">
+        <h2>Login de admin</h2>
+      </div>
+      <div class=" card-body">
+        <form action="/authenticate" method="post">
+            <fieldset>
+                <legend>Login</legend>
+                <label for="email">Email:</label>
+                <input class="form-control" type="email"  name="email" placeholder="email@exemplo.com"><br>
+        
+                <label for="password">Senha:</label>
+                <input class="form-control" type="password"  name="password" placeholder="***********"><br>
+        
+                <hr>
+                <button type="submit" class="btn btn-success btn-block">Logar </button>
+            </fieldset>
+        </form>
+      </div>
+    </div>
+</div> -->
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background: linear-gradient(135deg, #0040FF, #0074FF, #00B8FF);">
+  <div class="container vh-100 d-flex justify-content-center align-items-center">
+    <div class="card col-md-8">
+      <div class="card-header">
+        <h2 class="text-center">Login de admin</h2>
+      </div>
+      <div class="card-body">
+        <form action="/authenticate" method="post">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input class="form-control" type="email" name="email" placeholder="email@exemplo.com">
+          </div>
+          <div class="form-group">
+            <label for="password">Senha:</label>
+            <input class="form-control" type="password" name="password" placeholder="***********">
+          </div>
+          <button type="submit" class="btn btn-success btn-block">Logar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Adicione os scripts do Bootstrap (JQuery e Popper.js) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<%-include('../../Partials/footer.ejs') %>
